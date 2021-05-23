@@ -1,0 +1,47 @@
+Q) Hyphenize
+
+---------
+
+Max Execution Time: 3 Secs
+
+Objective of the program is to find increasing and decreasing patterns in the given input and Hyphenize it based on the sequence found. 
+The sequence can be of intervel 1,2,3
+
+For example: 
+1) abcde
+can be hyphenized as a-e with an interval of 1.
+
+2) aceg
+can be hyphenized as a-g with an interval of 2.
+
+Hyphenization should work for lower, capital and digits. 
+For example: NO need to recognize 101112 as a sequence of 10-12. However 01234 should be recognized as 0-4. 
+At the same time 89:; should NOT be recognized as 8-; Similar lower and upper case bounds should be honored.
+
+Your program should recognize both increasing and decreasing sequences. I.e. a string sequence of abcdefFEDCBA should be recognized as a-fF-A properly.
+A sequence of ABCDEDCBA should be recognized as A-EE-A properly as well.
+3 Makes a sequence, not 2
+
+(NOTE: IF PARTIAL SCORING IS ALLOWED IN THE TEST, RECOGNIZING AT LEAST ONE DIRECTION WILL GIVE YOU PARTIAL SCORE)
+
+Here a-f$1 denotes a-f is a sequence with interval of 1 character
+
+-----------------------------------------
+
+Sample Input Sample Output
+
+-----------------------------------------
+
+abcdef a-f$1
+
+abcdef9812312345 a-f$1981-3$11-5$1
+
+10111234 10111-4$1
+
+abcdefFEDCBA a-f$1F-A$1
+
+ABCDEDCBA A-E$1E-A$1
+
+ABCDEDCBAFHJL A-E$1E-A$1F-L$2
+
+--

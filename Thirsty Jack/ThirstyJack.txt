@@ -1,0 +1,39 @@
+Q) Thirsty Jack
+
+One sunny day Jack forgot to take water bottle and he spots a shop where he can buy some water.
+In that shop bottles are there of different volumes and costs.
+A bottle i has capacity 2^(i-1) liters and costs ci (i ϵ 1,2,3,..n) rupees.
+The number of bottles of each type in the shop can be considered infinite.
+
+Now the task is to help Jack buy atleast 'L' liters with minimum cost
+
+Input:
+
+Input is a file which contains 2 lines.
+The first line contains two integers n and L - the number of types of bottles in the shop and the required amount of water in liters, respectively.
+The second line contains n integers - the costs of bottles of different types.
+
+Output:
+
+First Line should contain the bottle capacity and number of bottles in decreasing order of capacity
+The second line should contain the total cost
+
+
+Example
+
+Input:
+
+4 12
+20 30 70 90
+
+Output:
+
+8:1,2:2
+150
+
+Explanation:
+
+In order to buy 12 liters jack can buy
+
+1. 8L + 4L = 90+70 = 160
+2. 8L + 2*2L = 90+2*30 = 150
