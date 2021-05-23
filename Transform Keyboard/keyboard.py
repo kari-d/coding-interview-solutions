@@ -1,18 +1,12 @@
 
 def h_transform(kb):
-    h = []
     for lst in kb:
-        h.append(lst[-1:-6:-1] + lst[:6])
-    
-    print(h)
-    return h
+        lst.reverse()
+    return kb
 
 def v_transform(kb):
-    v = []
-    for ind in range(3,-1, -1):
-        v.append(kb[ind])
-    print(v)
-    return v
+    kb.reverse()
+    return kb
 
 def shift(num, kb):
     st = ""
